@@ -1,5 +1,5 @@
 import React from 'react'
-import Aboutus from '../components/AboutUs/Aboutus'
+import Aboutus from '../components/aboutus/Aboutus'
 
 function About() {
     return (
