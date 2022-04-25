@@ -1,0 +1,17 @@
+@import '../styles/theme.scss';
+
+.layouts {
+
+    @include fourK {
+        display: flex;
+        justify-content: center;
+    }
+
+    .layout {
+        @include fourK {
+            width: 1440px;
+        }
+
+    }
+
+}

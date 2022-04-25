@@ -1,0 +1,305 @@
+@import "../../styles/theme.scss";
+
+.about-us {
+
+    @include mobile {
+        margin: 20px;
+    }
+
+    @include tablet-large {
+        margin: 50px;
+    }
+
+    @include tablet {
+        margin: 70px;
+    }
+
+    @include desktop {
+        margin: 100px;
+    }
+
+    @include fourK {
+        margin: 100px;
+    }
+
+    .toptitle {
+        color: $title-color;
+        text-align: center;
+
+        @include mobile {
+            font-size: $title-mobile-size;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        @include tablet-large {
+            font-size: $title-mobile-size;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        @include tablet {
+            font-size: $title-tablet-size;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        @include desktop {
+            font-size: $title-desktop-size;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        @include fourK {
+            font-size: $title-desktop-size;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    }
+
+    .centerdes {
+        justify-content: center;
+        display: flex;
+
+        .description {
+            color: $body-color;
+            text-align: center;
+
+            @include mobile {
+                width: 280px;
+                font-size: $body-mobile-size;
+            }
+
+            @include tablet-large {
+                width: 300px;
+                font-size: $body-mobile-size;
+            }
+
+            @include tablet {
+                font-size: $body-tablet-size;
+            }
+
+            @include desktop {
+                font-size: $body-desktop-size;
+            }
+
+            @include fourK {
+                font-size: $body-desktop-size;
+            }
+        }
+
+    }
+
+    .boxofteam {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+
+        .mainerofabout {
+
+            @include mobile {
+                margin-top: 30px;
+                margin-bottom: 50px;
+            }
+
+            @include tablet-large {
+                margin-top: 40px;
+                margin-bottom: 50px;
+            }
+
+            @include tablet-large {
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            @include tablet {
+                margin-top: 40px;
+                margin-bottom: 50px;
+            }
+
+            @include desktop {
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            @include fourK {
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            .Avatarbox {
+                box-shadow: 1px 1px 1px 1px #e5e5e5;
+
+                @include mobile {
+                    width: 260px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    border-radius: 5px;
+                }
+
+                @include tablet-large {
+                    width: 300px;
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    border-radius: 10px;
+                }
+
+                @include tablet {
+                    width: 215px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    border-radius: 8px;
+                }
+
+                @include desktop {
+                    width: 300px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    border-radius: 10px;
+                }
+
+                @include fourK {
+                    width: 300px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    border-radius: 10px;
+                }
+
+                .centeroffirstAvatar {
+                    justify-content: center;
+                    display: flex;
+
+                    .firstAvatar {
+                        @include mobile {
+                            width: 150px;
+                            height: 150px;
+                        }
+
+                        @include tablet-large {
+                            width: 180px;
+                            height: 180px;
+                        }
+
+                        @include tablet {
+                            width: 140px;
+                            height: 140px;
+                        }
+
+                        @include desktop {
+                            width: 200px;
+                            height: 200px;
+                        }
+
+                        @include fourK {
+                            width: 200px;
+                            height: 200px;
+                        }
+                    }
+                }
+
+                .titleoffirstavatar {
+                    color: darkblue;
+                    text-align: center;
+                    font-weight: 600;
+
+                    @include mobile {
+                        margin-top: 10px;
+                        font-size: $titleCard-mobile-size;
+                    }
+
+                    @include tablet-large {
+                        margin-top: 10px;
+                        font-size: $titleCard-mobile-size;
+                    }
+
+                    @include tablet {
+                        margin-top: 10px;
+                        font-size: $titleCard-tablet-size;
+                    }
+
+                    @include desktop {
+                        margin-top: 10px;
+                        font-size: $titleCard-desktop-size;
+                    }
+
+                    @include fourK {
+                        margin-top: 10px;
+                        font-size: $titleCard-desktop-size;
+                    }
+                }
+
+                .paragraphoffirstavatar {
+                    color: $body-color;
+                    font-size: 20px;
+                    text-align: center;
+
+                    @include mobile {
+                        margin-top: 10px;
+                        font-size: $body-mobile-size;
+                    }
+
+                    @include tablet-large {
+                        margin-top: 10px;
+                        font-size: $body-tablet-size;
+                    }
+
+                    @include tablet {
+                        margin-top: 10px;
+                        font-size: $body-tablet-size;
+                    }
+
+                    @include desktop {
+                        margin-top: 10px;
+                        font-size: $body-desktop-size;
+                    }
+
+                    @include fourK {
+                        margin-top: 10px;
+                        font-size: $body-desktop-size;
+                    }
+                }
+
+                .iconofavatar {
+                    display: flex;
+                    color: darkblue;
+                    justify-content: center;
+                    font-size: 30px;
+
+                    @include mobile {
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                        font-size: $titleCard-mobile-size;
+                    }
+
+                    @include tablet-large {
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                        font-size: $titleCard-mobile-size;
+                    }
+
+                    @include tablet {
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                        font-size: $titleCard-tablet-size;
+                    }
+
+                    @include desktop {
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                        font-size: $titleCard-desktop-size;
+                    }
+
+                    @include fourK {
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                        font-size: $titleCard-desktop-size;
+                    }
+
+                    .iconavatar {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

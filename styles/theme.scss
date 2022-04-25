@@ -1,0 +1,105 @@
+// Title --------------------------------
+
+$title-color: darkblue;
+$title-color-red: red;
+$title-color-icon:#58AAFF;
+$title-weight: bold;
+$title-transform: capitalize;
+
+$work-fourK-size: 55px;
+$work-desktop-size: 45px;
+$work-tablet-size: 35px;
+$work-mobile-size: 30px;
+
+$title-fourK-size: 100px;
+$title-desktop-size: 35px;
+$title-tablet-size: 30px;
+$title-mobile-size: 25px;
+
+
+$partner-mobile-size:30px;
+$partner-tablet-size:30px;
+$partner-desktop-size:40px;
+
+
+$titleCard-desktop-size: 20px;
+$titleCard-tablet-size: 18px;
+$titleCard-mobile-size: 20px;
+
+$bodyCard-desktop-size: 15px;
+$bodyCard-tablet-size: 15px;
+$bodyCard-mobile-size: 15px;
+
+//icon size
+$icon-color:#e5e5e5;
+$icon-background:#e5e5e5;
+$icon-mobile-size : 20px;
+$icon-tablet-size : 25px;
+$icon-desktop-size : 30 px;
+
+
+// Body --------------------------------
+$body-color:#5c6975;
+$body-desktop-size: 20px;
+$body-tablet-size: 15px;
+$body-mobile-size: 13px;
+
+//button
+
+$button-desktop-size: 15px;
+$button-tablet-size: 10px;
+$button-mobile-size: 8px;
+// Breakpion ----------------------------
+$desktopL-width: 1440px;
+$desktop-width: 1024px;
+$tablet-width: 768px;
+$mobile-width: 640px;
+$mobile-small-width: 50px;
+$start: 0px;
+
+$background-color: #f5f5f5;
+
+/* For Desktop View */
+@mixin fourK {
+    @media (min-width: #{$desktopL-width}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) and (max-width: #{$desktopL-width}) {
+        @content;
+    }
+}
+
+/* For Tablet View */
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin tablet-large {
+    @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@mixin mobile {
+    @media (min-width: #{$mobile-small-width}) and (max-width: #{$mobile-width}) {
+        @content;
+    }
+}
+
+@mixin tabletAndMobile {
+    @media (min-width: #{$start}) and (max-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin paddingSidebar {
+    @media (min-width: #{989px}) and (max-width: #{1271px}) {
+        @content;
+    }
+}

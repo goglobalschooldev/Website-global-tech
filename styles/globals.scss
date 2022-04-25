@@ -1,0 +1,71 @@
+@import "./theme.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.errorpage {
+  text-align: center;
+
+  @include mobile {
+    margin: 50px;
+
+  }
+
+  @include tablet-large {
+    margin: 200px;
+
+  }
+
+  @include tablet {
+    margin: 200px;
+
+  }
+
+  @include desktop {
+    margin: 200px;
+  }
+
+  @include fourK {
+    margin: 200px;
+  }
+
+  .titleEror {
+
+    @include mobile {
+      font-size: $title-mobile-size;
+      font-weight: bold;
+    }
+
+    @include tablet-large {
+      font-size: $title-tablet-size;
+      font-weight: bold;
+    }
+
+    @include tablet {
+      font-size: $title-tablet-size;
+      font-weight: bold;
+    }
+
+    @include desktop {
+      font-size: $title-desktop-size;
+      font-weight: bold;
+    }
+
+    @include fourK {
+      font-size: $title-desktop-size;
+      font-weight: bold;
+    }
+  }
+
+
+  .text2Eror {
+    .textEror {
+      color: green;
+      font-weight: $title-weight;
+      font-size: 20px;
+    }
+  }
+}

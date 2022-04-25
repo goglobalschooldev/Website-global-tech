@@ -1,0 +1,333 @@
+@import '../../styles/theme.scss';
+
+.mainfooter {
+    background-color: darkblue;
+
+    @include mobile {
+        padding: 30px;
+    }
+
+    @include tablet-large {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+    }
+
+    @include tablet {
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-top: 20px;
+    }
+
+    @include desktop {
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 20px;
+    }
+
+    @include fourK {
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 20px;
+    }
+
+    .centeringfooter {
+        @include mobile {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .expand {
+            @include mobile {
+                width: 100%;
+            }
+
+            .boxingImg {
+                display: flex;
+
+                @include mobile {
+                    height: 70px;
+                    justify-content: center;
+                }
+
+                @include tablet-large {
+                    height: 60px;
+                }
+
+                @include tablet {
+                    height: 60px;
+                }
+
+                @include desktop {
+                    height: 80px;
+                }
+
+                @include fourK {
+                    height: 80px;
+                }
+
+
+                .ImgLogo {
+                    background-color: #fff;
+                    border-radius: 50%;
+
+                    @include mobile {
+                        height: 60px;
+                    }
+
+                    @include tablet-large {
+                        height: 50px;
+                    }
+
+                    @include tablet {
+                        height: 50px;
+                    }
+
+                    @include desktop {
+                        height: 60px;
+                    }
+
+                    @include fourK {
+                        height: 60px;
+                    }
+                }
+            }
+
+            .des {
+                color: #fff;
+
+                @include mobile {
+                    font-size: $body-mobile-size;
+                }
+
+                @include tablet-large {
+                    font-size: $bodyCard-mobile-size;
+                }
+
+                @include tablet {
+                    font-size: $bodyCard-tablet-size;
+                }
+
+                @include desktop {
+                    font-size: $bodyCard-desktop-size;
+                }
+
+                @include fourK {
+                    font-size: $bodyCard-desktop-size;
+                }
+            }
+        }
+
+        .pushright {
+            @include mobile {
+                display: flex;
+            }
+
+            @include tablet-large {
+                justify-content: flex-end;
+                display: flex;
+                height: 60px;
+            }
+
+            @include tablet {
+                justify-content: flex-end;
+                display: flex;
+                height: 50px;
+            }
+
+            @include desktop {
+                justify-content: flex-end;
+                display: flex;
+                height: 50px;
+            }
+
+            @include fourK {
+                justify-content: flex-end;
+                display: flex;
+                height: 50px;
+            }
+
+            .righttitle {
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+
+                @include mobile {
+                    height: 70px;
+                }
+
+                @include tablet-large {
+                    height: 60px;
+                }
+
+                @include tablet {
+                    height: 60px;
+                }
+
+                @include desktop {
+                    height: 80px;
+                }
+
+                @include fourK {
+                    height: 80px;
+                }
+
+                .titles {
+                    color: #fff;
+                    font-weight: 400;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    @include mobile {
+                        font-size: $titleCard-mobile-size;
+                    }
+
+                    @include tablet-large {
+                        font-size: $titleCard-mobile-size;
+                    }
+
+                    @include tablet {
+                        font-size: $titleCard-desktop-size;
+                    }
+
+                    @include desktop {
+                        font-size: $title-tablet-size;
+                    }
+
+                    @include fourK {
+                        font-size: $title-tablet-size;
+                    }
+                }
+            }
+
+            .des1 {
+                color: #fff;
+
+                @include mobile {
+                    font-size: $body-mobile-size;
+                }
+
+                @include tablet-large {
+                    font-size: $bodyCard-tablet-size;
+                }
+
+                @include tablet {
+                    font-size: $bodyCard-tablet-size;
+                }
+
+                @include desktop {
+                    font-size: $bodyCard-desktop-size;
+                }
+
+                @include fourK {
+                    font-size: $bodyCard-desktop-size;
+                }
+            }
+
+        }
+    }
+
+
+    .divider {
+        width: 100%;
+
+        @include mobile {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        @include tablet-large {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        @include tablet {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        @include desktop {
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        @include fourK {
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .footerbox {
+            display: flex;
+            margin-top: 10px;
+            align-items: center;
+            justify-content: center;
+
+            .social {
+                color: #fff;
+                margin-right: 5px;
+                font-size: large;
+
+                @include mobile {
+                    font-size: $body-mobile-size;
+                }
+
+                @include tablet-large {
+                    font-size: $body-tablet-size;
+                }
+
+                @include tablet {
+                    font-size: $body-tablet-size;
+                }
+
+                @include desktop {
+                    font-size: $body-desktop-size;
+                }
+
+                @include fourK {
+                    font-size: $body-desktop-size;
+                }
+            }
+
+            .footertitle {
+                width: 100%;
+                color: #fff;
+                text-align: center;
+                align-self: center;
+                justify-content: center;
+
+                @include mobile {
+                    font-size: $body-mobile-size;
+                }
+
+                @include tablet-large {
+                    font-size: $body-tablet-size;
+                }
+
+                @include tablet {
+                    font-size: $body-tablet-size;
+                }
+
+                @include desktop {
+                    font-size: $body-desktop-size;
+                }
+
+                @include fourK {
+                    font-size: $body-desktop-size;
+                }
+
+                .skeleton-st {
+                    display: flex;
+                    justify-content: center;
+                    margin-left: 20%;
+                    width: 40%;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}

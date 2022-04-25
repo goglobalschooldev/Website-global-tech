@@ -1,0 +1,113 @@
+@import "../../styles/theme.scss";
+
+.navbar {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+
+    @include mobile {
+        display: none;
+    }
+
+    @include tablet {
+        height: 80px;
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+
+    @include tablet-large {
+        height: 80px;
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+
+    @include desktop {
+        height: 100px;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    @include fourK {
+        height: 100px;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    .logo {
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        cursor: pointer;
+
+        .logonavba {
+            @include tablet-large {
+                width: 55px;
+                height: 55px;
+            }
+
+            @include tablet {
+                width: 60px;
+                height: 60px;
+            }
+
+            @include desktop {
+                width: 80px;
+                height: 80px;
+            }
+
+            @include fourK {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        img {
+
+            @include tablet-large {
+                width: 55px;
+            }
+
+            @include tablet {
+                width: 60px;
+            }
+
+            @include desktop {
+                width: 80px;
+            }
+
+            @include fourK {
+                width: 80px;
+            }
+        }
+    }
+
+    .menu {
+        width: 100%;
+        justify-content: flex-end;
+        display: flex;
+
+        .home1 {
+            padding: 10px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+
+            @include tablet-large {
+                font-size: $body-tablet-size;
+            }
+
+            @include tablet {
+                font-size: $body-tablet-size;
+            }
+
+            @include desktop {
+                font-size: $body-desktop-size;
+            }
+
+            @include fourK {
+                font-size: $body-desktop-size;
+            }
+        }
+    }
+}
